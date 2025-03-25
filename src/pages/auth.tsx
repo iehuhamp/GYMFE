@@ -6,7 +6,7 @@ import useAuthStore from "../store/use-user";
 import "./auth.css";
 
 const loginApi =
-  "https://gymbe-production-233d.up.railway.app/api/authen/login";
+  "https://testupoadserver-fmbxg7epg4gscxb6.canadacentral-01.azurewebsites.net/api/users/login";
 
 export default function Auth() {
   const [email, setEmail] = useState("");
