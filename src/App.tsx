@@ -4,6 +4,8 @@ import Home from "./pages/home";
 import Auth from "./pages/auth";
 import Dashboard from "./pages/dashboard";
 import Layout from "./pages/layout";
+import "./styles.css";
+
 
 function App() {
   return (

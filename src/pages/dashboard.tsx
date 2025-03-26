@@ -104,7 +104,7 @@ function Account() {
       try {
         setIsLoading(true);
         const response = await fetch(
-          "https://gymbe-production-233d.up.railway.app/api/authen/get-all",
+          "https://testupoadserver-fmbxg7epg4gscxb6.canadacentral-01.azurewebsites.net/api/users/all",
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -183,7 +183,7 @@ function Account() {
       console.log("Request body:", requestBody);
 
       const response = await fetch(
-        "https://gymbe-production-233d.up.railway.app/api/authen/edit",
+        "https://testupoadserver-fmbxg7epg4gscxb6.canadacentral-01.azurewebsites.net/api/users/edit",
         {
           method: "POST",
           headers: {
@@ -232,7 +232,7 @@ function Account() {
 
       // Construct URL with query parameter for id
       const url = new URL(
-        "https://gymbe-production-233d.up.railway.app/api/authen/delete",
+        "https://testupoadserver-fmbxg7epg4gscxb6.canadacentral-01.azurewebsites.net/api/users/delete",
       );
 
       url.searchParams.append("id", accountId);
@@ -455,7 +455,7 @@ function Booking() {
       try {
         setIsLoading(true);
         const response = await fetch(
-          "https://gymbe-production-233d.up.railway.app/booking",
+          "https://testupoadserver-fmbxg7epg4gscxb6.canadacentral-01.azurewebsites.net/api/booking",
           {
             headers: {
               Authorization: `Bearer ${token}`,
